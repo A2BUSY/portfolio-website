@@ -1,0 +1,18 @@
+/* 
+color palette
+
+darkest to lightest
+
+#323031
+#B5BEC6
+#E3EDF2
+#6F58C9
+
+generated using https://coolors.co/
+*/
+
+
+/* We use @import to import the right stylesheet based on which shape it is */
+
+@import "sm.css" screen and (max-width: 480px);
+@import "lg.css" screen and (min-width: 480px);
