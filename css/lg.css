@@ -1,0 +1,18 @@
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #b5bec6;
+    border-radius: 0.5rem;
+}
+
+nav a {
+    color: #323031;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #E3EDF2;
+}
