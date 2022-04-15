@@ -19,3 +19,47 @@ nav a {
 nav a:hover {
     background-color: #E3EDF2;
 }
+
+#lastlink {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+#shownav {
+    display: none;
+}
+
+#home-introduction {
+    color: #E3EDF2;
+    font-size: 4rem;
+    justify-content: space-around;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#home-my-name {
+    font-size: 12rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+}
+
+#home-image {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#home-description {
+    color: #b5bec6;
+    font-size: 1.5rem;
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+.home-grid-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 0.4fr);
+}
