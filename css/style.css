@@ -14,5 +14,11 @@ generated using https://coolors.co/
 
 /* We use @import to import the right stylesheet based on which shape it is */
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@500&display=swap');
 @import "sm.css" screen and (max-width: 480px);
 @import "lg.css" screen and (min-width: 480px);
+body {
+    background-size: cover;
+    background-color: #323031;
+    font-family: 'Red Hat Mono', monospace;
+}
