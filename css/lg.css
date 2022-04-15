@@ -16,11 +16,15 @@ nav a {
     transition-timing-function: ease-in-out;
 }
 
-nav a:last-child {
+nav a:hover {
+    background-color: #E3EDF2;
+}
+
+#lastlink {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
-nav a:hover {
-    background-color: #E3EDF2;
+#shownav {
+    display: none;
 }
