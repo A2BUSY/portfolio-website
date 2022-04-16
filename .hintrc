@@ -1,0 +1,8 @@
+{
+  "extends": ["development"],
+  "hints": {
+    "compat-api/css": "off"
+  }
+}
+// https://stackoverflow.com/a/70676598
+// turns off compatability errors for Internet explorer with grid
