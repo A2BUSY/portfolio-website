@@ -222,7 +222,6 @@ legend {
 
 article {
     color: #E3EDF2;
-    width: min(600px, 80%);
     margin-left: auto;
     margin-right: auto;
     border: #E3EDF2 2px solid;
@@ -231,5 +230,44 @@ article {
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-top: 1rem;
+}
+
+main article li a {
+    text-decoration: none;
+    color: #815eaa;
+}
+
+#articleContainer {
+    margin-top: 4rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 0.7fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#article1 {
+    font-size: 1.5rem;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#article2 {
+    font-size: 1.5rem;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#article3 {
+    font-size: 1.5rem;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
