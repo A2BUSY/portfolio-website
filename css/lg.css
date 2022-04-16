@@ -197,3 +197,20 @@ nav a:hover {
     grid-template-columns: repeat(5, 0.7fr);
     grid-template-rows: repeat(3, 0.5fr);
 }
+
+fieldset {
+    width: min(480px, 80%);
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #E3EDF2;
+    color: #E3EDF2;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+legend {
+    font-size: x-large;
+}
