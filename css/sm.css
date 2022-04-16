@@ -1,0 +1,254 @@
+#shownav:checked+nav {
+    top: 4rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: #b5bec6;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+nav a {
+    color: #323031;
+    padding: 1rem;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover {
+    background-color: #E3EDF2;
+}
+
+#shownav {
+    height: 0.8em;
+    width: 1.25em;
+    display: inline-block;
+    border: 0.2em solid #815eaa;
+    padding: 10px 20px;
+    width: 40px;
+    height: 10px;
+    visibility: hidden;
+}
+
+#shownav::after {
+    opacity: 1;
+    content: "≡";
+    color: white;
+    font-size: 50px;
+    visibility: visible;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: none;
+}
+
+#home-introduction {
+    color: #E3EDF2;
+    font-size: 3rem;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#home-my-name {
+    font-size: 6rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#home-image {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: none;
+}
+
+#home-description {
+    color: #b5bec6;
+    font-size: 1.5rem;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.home-grid-container {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 0.4fr);
+}
+
+.text-highlight-home {
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    animation: highlight-home 8s linear 0ms infinite both;
+    opacity: 100%;
+}
+
+.text-highlight-home::before {
+    z-index: -1;
+    display: grid;
+    position: absolute;
+    color: #b51717;
+    content: "Ahmed";
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    transform: translate(-4px, -4px);
+    opacity: 80%;
+    animation: highlight-pseudo-blue 8s linear 0ms infinite both;
+}
+
+.text-highlight-home::after {
+    z-index: 1;
+    display: grid;
+    position: absolute;
+    content: "Ahmed";
+    transform: translate(4px, 4px);
+    opacity: 80%;
+    animation: highlight-pseudo-red 8s linear 0ms infinite both;
+}
+
+@keyframes highlight-pseudo-blue {
+    from {
+        color: #261dce;
+    }
+    40% {
+        color: transparent
+    }
+    60% {
+        color: transparent
+    }
+    to {
+        color: #261dce;
+    }
+}
+
+@keyframes highlight-pseudo-red {
+    from {
+        color: #b51717;
+    }
+    40% {
+        color: transparent
+    }
+    60% {
+        color: transparent
+    }
+    to {
+        color: #b51717;
+    }
+}
+
+@keyframes highlight-home {
+    from {
+        color: transparent;
+    }
+    40% {
+        color: #815eaa
+    }
+    60% {
+        color: #815eaa
+    }
+    to {
+        color: transparent;
+    }
+}
+
+.portfolio-image-right {
+    width: 300px;
+    height: 300px;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-title-left {
+    color: #b5bec6;
+    font-size: 3rem;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.portfolio-description-left {
+    color: #b5bec6;
+    font-size: 1.5rem;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.portfolio-image-left {
+    width: 300px;
+    height: 300px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-title-right {
+    color: #b5bec6;
+    font-size: 3rem;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.portfolio-description-right {
+    color: #b5bec6;
+    font-size: 1.5rem;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.portfolio-grid-container {
+    margin-top: 4rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 0.7fr);
+    grid-template-rows: repeat(3, 0.5fr);
+}
+
+fieldset {
+    width: min(480px, 80%);
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #E3EDF2;
+    color: #E3EDF2;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+legend {
+    font-size: x-large;
+}
+
+article {
+    color: #E3EDF2;
+    width: min(600px, 80%);
+    margin-left: auto;
+    margin-right: auto;
+    border: #E3EDF2 2px solid;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}

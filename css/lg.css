@@ -11,7 +11,7 @@ nav a {
     color: #323031;
     padding: 1rem;
     text-decoration: none;
-    transition-property: background-color;
+    transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
@@ -104,7 +104,11 @@ nav a:last-child {
     from {
         color: #261dce;
     }
-    50% {
+    35% {
+        color: transparent;
+        transform: translate(7px, 7px);
+    }
+    65% {
         color: transparent
     }
     to {
@@ -116,29 +120,30 @@ nav a:last-child {
     from {
         color: #b51717;
     }
-    40% {
-        color: transparent
+    35% {
+        color: transparent;
+        transform: translate(-7px, -7px);
     }
-    60% {
-        color: transparent
+    65% {
+        color: transparent;
     }
     to {
         color: #b51717;
     }
 }
 
-@keyframes highlight-home {
+@keyframes highlight-main {
     from {
-        color: currentColor;
+        color: transparent;
     }
-    40% {
-        color: transparent
+    25% {
+        color: #815eaa
     }
-    60% {
-        color: transparent
+    75% {
+        color: #815eaa
     }
     to {
-        color: currentColor;
+        color: transparent;
     }
 }
 
