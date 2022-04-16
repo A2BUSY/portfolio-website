@@ -40,7 +40,7 @@ nav a:hover {
 #home-my-name {
     font-size: 12rem;
     grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
 }
 
@@ -58,10 +58,88 @@ nav a:hover {
 }
 
 .home-grid-container {
-    margin-top: 4rem;
     display: grid;
+    margin-top: 4rem;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 0.4fr);
+}
+
+.text-highlight-home {
+    display: grid;
+    color: #815eaa;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    animation: highlight-main 8s linear 0ms infinite both;
+    opacity: 100%;
+}
+
+.text-highlight-home::before {
+    z-index: -1;
+    display: grid;
+    position: absolute;
+    color: #b51717;
+    content: "Ahmed";
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    transform: translate(-10px, -10px);
+    opacity: 80%;
+    animation: highlight-pseudo-blue 8s linear 0ms infinite both;
+}
+
+.text-highlight-home::after {
+    z-index: 1;
+    display: grid;
+    position: absolute;
+    content: "Ahmed";
+    transform: translate(10px, 10px);
+    opacity: 80%;
+    animation: highlight-pseudo-red 8s linear 0ms infinite both;
+}
+
+@keyframes highlight-pseudo-blue {
+    from {
+        color: #261dce;
+    }
+    50% {
+        color: transparent
+    }
+    to {
+        color: #261dce;
+    }
+}
+
+@keyframes highlight-pseudo-red {
+    from {
+        color: #b51717;
+    }
+    40% {
+        color: transparent
+    }
+    60% {
+        color: transparent
+    }
+    to {
+        color: #b51717;
+    }
+}
+
+@keyframes highlight-home {
+    from {
+        color: currentColor;
+    }
+    40% {
+        color: transparent
+    }
+    60% {
+        color: transparent
+    }
+    to {
+        color: currentColor;
+    }
 }
 
 .portfolio-image-right {
