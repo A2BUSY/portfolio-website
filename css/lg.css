@@ -32,7 +32,6 @@ nav a:last-child {
 #home-introduction {
     color: #E3EDF2;
     font-size: 4rem;
-    justify-content: space-around;
     grid-row-start: 1;
     grid-column-start: 2;
 }

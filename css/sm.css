@@ -165,60 +165,29 @@ nav {
     }
 }
 
-.portfolio-image-right {
+.portfolio-image {
     width: 300px;
     height: 300px;
-    grid-column-start: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 
-.portfolio-title-left {
+.portfolio-title {
     color: #b5bec6;
     font-size: 3rem;
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
 }
 
-.portfolio-description-left {
+.portfolio-description {
     color: #b5bec6;
     font-size: 1.5rem;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.portfolio-image-left {
-    width: 300px;
-    height: 300px;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.portfolio-title-right {
-    color: #b5bec6;
-    font-size: 3rem;
-    grid-row-start: 1;
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-.portfolio-description-right {
-    color: #b5bec6;
-    font-size: 1.5rem;
-    grid-row-start: 2;
-    grid-column-start: 3;
-    grid-column-end: 5;
 }
 
 .portfolio-grid-container {
     margin-top: 4rem;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(5, 0.7fr);
+    grid-template-columns: repeat(1, 0.7fr);
     grid-template-rows: repeat(3, 0.5fr);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 fieldset {
@@ -227,12 +196,13 @@ fieldset {
     margin-right: auto;
     border-color: #E3EDF2;
     color: #E3EDF2;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     margin-top: 2rem;
     border-radius: 1rem;
+    font-size: small;
 }
 
 legend {
@@ -251,4 +221,9 @@ article {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 1rem;
+    word-wrap: break-word;
+}
+
+article:first-child {
+    margin-top: 2rem;
 }
