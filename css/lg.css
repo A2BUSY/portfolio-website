@@ -11,7 +11,7 @@ nav a {
     color: #323031;
     padding: 1rem;
     text-decoration: none;
-    transition-property: background-color;
+    transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
@@ -20,7 +20,7 @@ nav a:hover {
     background-color: #E3EDF2;
 }
 
-#lastlink {
+nav a:last-child {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -32,21 +32,20 @@ nav a:hover {
 #home-introduction {
     color: #E3EDF2;
     font-size: 4rem;
-    justify-content: space-around;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 2;
 }
 
 #home-my-name {
     font-size: 12rem;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
 }
 
 #home-image {
     grid-column-start: 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 5;
 }
 
@@ -104,7 +103,11 @@ nav a:hover {
     from {
         color: #261dce;
     }
-    50% {
+    35% {
+        color: transparent;
+        transform: translate(7px, 7px);
+    }
+    65% {
         color: transparent
     }
     to {
@@ -116,29 +119,30 @@ nav a:hover {
     from {
         color: #b51717;
     }
-    40% {
-        color: transparent
+    35% {
+        color: transparent;
+        transform: translate(-7px, -7px);
     }
-    60% {
-        color: transparent
+    65% {
+        color: transparent;
     }
     to {
         color: #b51717;
     }
 }
 
-@keyframes highlight-home {
+@keyframes highlight-main {
     from {
-        color: currentColor;
+        color: transparent;
     }
-    40% {
-        color: transparent
+    25% {
+        color: #815eaa
     }
-    60% {
-        color: transparent
+    75% {
+        color: #815eaa
     }
     to {
-        color: currentColor;
+        color: transparent;
     }
 }
 
