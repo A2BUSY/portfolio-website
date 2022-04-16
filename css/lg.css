@@ -33,20 +33,20 @@ nav a:last-child {
     color: #E3EDF2;
     font-size: 4rem;
     justify-content: space-around;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 2;
 }
 
 #home-my-name {
     font-size: 12rem;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
 }
 
 #home-image {
     grid-column-start: 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 5;
 }
 
