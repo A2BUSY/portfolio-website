@@ -230,6 +230,47 @@ article {
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#sr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 3;
+    gap: 20px;
+}
+
+#my-report {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#navbar-image {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#animation-code {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#validation-code {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.code-image {
+    width: min(25vw, 500px);
 }
 
 main article li a {

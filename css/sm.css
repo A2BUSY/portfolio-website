@@ -22,6 +22,16 @@ nav a:hover {
     background-color: #E3EDF2;
 }
 
+nav a:last-child:hover {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+nav a:first-child:hover {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
 #shownav {
     height: 0.8em;
     width: 1.25em;
@@ -226,4 +236,8 @@ article {
 
 article:first-child {
     margin-top: 2rem;
+}
+
+.code-image {
+    width: 300px;
 }

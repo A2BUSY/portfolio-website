@@ -18,7 +18,53 @@
         <a href="/blog.html">Blog</a>
         <a href="/sitereport.html">Site Report</a>
     </nav>
-    <main></main>
+    <main id="sr">
+        <article id="my-report">
+            <section>
+                <title>
+                    <h1>My Report</h1>
+                </title>
+                <h2>Scaffolding the project</h2>
+                <p>
+                    To set up the basic file structure of the project, I created each HTML page, with a tool called emmet that was preinstalled with VS code using <kbd>!</kbd> then <kbd>tab</kbd>. After that I created a css folder and put style.css into
+                    it. I then created a sm.css for smaller devices, and a lg.css for large devices, and imported them from style.css if the device width was correct.
+                </p>
+                <h2>Creating the Navigation Bar</h2>
+                <p>
+                    My first step was to create the HTML for the bar. Originally the hamburger menu was a link, however this would not work when i clicked it. I did some research and decided to use a checkbox, as it would work the same. Then I used the :focus selector to
+                    check if it was selected, and change the navbar display from none to flex. This means it would show when the checkbox was clicked. To style it like a hamburger menu, I used a pseudoelement and gave it content "≡". I also made animation
+                    on hover, using transition to slowly highlight, instead of instantly.
+                </p>
+                <h2>Creating the Index Name Animation</h2>
+                <p>
+                    First, I used a fading transition from a lighter purple, to a darker purple. This is still used in this page, under the class "text-highlight". Then I decided to use a 3D glitch effect, having inspiration from
+                    <a href="https://codepen.io/cipherbeta/pen/YLdVjw">here</a>. To create a similar effect, I decided to use a ::before and ::after pseudoelement. I created animations to move them slightly towards the original word, so it will have a
+                    cool seperating effect.
+                </p>
+                <h2>Where Design influences came from</h2>
+                <p>
+                    First, to generate the colors I used coolors.co, which is a website for generating color palettes quickly. To generate the pictures of my code, I found a website called https://carbon.now.sh/, which allowed me to create high quality screenshots
+                </p>
+            </section>
+        </article>
+        <article id="navbar-image">
+            <section>
+                <h2>Navigation Bar Code</h2>
+                <img src="./imgs/navcode.png" alt="navigation bar code" class="code-image" />
+            </section>
+        </article>
+        <article id="animation-code">
+            <h2>Animation code</h2>
+            <img src="./imgs/original_highlight.png" alt="original highlight code" class="code-image" />
+            <img src="./imgs/glitch_highlight.png" alt="finished highlight code" class="code-image" />
+        </article>
+        <article id="validation-code">
+            <h2>Validation Reports</h2>
+            <img src="./imgs/html1.png" alt="finished highlight code" class="code-image" />
+            <img src="./imgs/css1.png" alt="finished highlight code" class="code-image" />
+            <img src="./imgs/css2.png" alt="finished highlight code" class="code-image" />
+        </article>
+    </main>
 </body>
 
 </html>
